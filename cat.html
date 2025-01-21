@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Demo</title>
+    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pdt1zjx.css"> <!--codefont-->
+    <link rel="stylesheet" href="https://use.typekit.net/rod1uhx.css"> <!--pestofresco-->
+    <link rel="stylesheet" href="https://use.typekit.net/pdt1zjx.css"> <!--monota-->
+    <link rel="stylesheet" href="https://use.typekit.net/pdt1zjx.css"> <!--cursive font-->
+
+</head>
+<body>
+
+    <div class="hero">
+        <div class="cat">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+                <div class="eye eye--left">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="eye eye--right">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="muzzle"></div>
+            </div>
+        </div>
+        <img class="intro-picture" src="pictures/intro.jpg">
+        <p class="speech-bubble">pssst-are you interested in learning more about css animations?<br> <br>scroll down<br><br></p>
+    </div>
+
+    <div class="content">
+    <div class="welcome">
+        <h1 data-text="Animations in CSS" class="Title">Animations in CSS</h1>
+        <p class="infotext"> Animations = advanced programming languages? Actually you can create a lot of very cool animations just using css!</p>
+        <div class="animation bounce" style="top: 2%; left: 45%;"></div>
+        <div class="animation planet" style="top: 15%; right: 10%;"></div>
+        <div class="animation glow" style="bottom: 80%; left: 10%;"></div>
+        <div class="animation move" style="bottom: 20%; right: 15%;"></div>
+        <div class="animation square" style="top: 84%; left: 46%; transform: translate(-50%, -50%);"></div>
+        <div class="animation triangle" style="top: 75%; right: 85%; transform: translate(50%, -50%);"></div>
+    </div>
+</div>
+
+<!--<div class="Explaining">
+    <div class="Title1"><p>Whats an Animation?</p></div>
+    <div class="text1">
+        <p>An animation lets an element gradually change from one style to another. Animations consist of two components.
+        <br><br>A style describing the CSS animation:<br><br></p>
+    </div>
+
+    <div class="code1">
+        <img src="pictures/Bildschirmfoto 2025-01-17 um 18.44.31.png" alt="picture of code showing css style" class="picture1">
+    </div>
+    
+    <div class="text2">
+        <p>and a set of <code class="keyframes-styling">@ keyframes</code>that indicate the start and end states of the animation's style, as well as possible intermediate waypoints:</p>
+    </div>
+
+
+    <div class="code1">
+        <img src="pictures/Bildschirmfoto 2025-01-17 um 18.44.39.png" alt="picture of code showing css style" class="picture1">
+    </div> 
+</div>-->
+
+
+
+<section class="how-it-works">
+
+
+<div id="container">
+    <button class="face-button" >
+      <span class="face-container">
+        <span class="eye left"></span>
+        <span class="eye right"></span>
+        <span class="mouth"></span>
+      </span>
+    </button>
+  </div>
+
+    <h1>How it works</h1>
+    <div class="grid-container">
+        <div class="step">
+            <img src="pictures/step1.jpg" alt="Step 1 Code">
+            <h2>Step 1: Create the Element</h2>
+            <p>Start by creating a simple HTML element, such as a square div with basic styles.</p>
+        </div>
+
+        <div class="step">
+            <img src="pictures/step2.jpg" alt="Step 2 Code">
+            <h2>Step 2: Style the Element</h2>
+            <p>Apply CSS styles to shape and color your element. This step adds the visual appearance.</p>
+        </div>
+
+        <div class="step">
+            <img src="pictures/step3.jpg" alt="Step 3 Code">
+            <h2>Step 3: Add Keyframes</h2>
+            <p>Define keyframes to specify the animation's starting and ending points, and how it transitions.</p>
+        </div>
+
+        <div class="step">
+            <img src="pictures/step4.jpg" alt="Step 4 Code">
+            <h2>Step 4: Enjoy the Animation</h2>
+            <p>Apply the animation to your element and watch it come to life!</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="interactive-tutorial">
+    <h1 class="Title2">Try it yourself</h1>
+    <p>Follow the steps below to create this simple animation:</p>
+    <div class="tutorial-animation"></div>
+    
+    <div class="grid-container">
+        <!-- Step 1: HTML -->
+        <div class="interactive-step">
+            <h2>Step 1: HTML</h2>
+            <p>We first create our <b>square element</b>. Then we will give the <code>div</code> a class named for example <code>"blue-square"</code>. This way we can style our element in the next step.<br><br>Lets go! This is what your code should look like: </p>
+            <pre><code>&lt;div class="blue-square"&gt;&lt;/div&gt;</code></pre>
+            <p>Type your code below:</p>
+            <textarea id="html-code"></textarea>
+            <p id="html-error" class="error-message"></p>
+        </div>
+
+        <!-- Step 2: CSS -->
+        <div class="interactive-step">
+            <h2>Step 2: CSS</h2>
+            <p>Now we will define the <b>size</b> and the <b>color</b> of our square. You would like to have another color? No problem, just change the name of the color the code! <br><br>Let's go! This is what your code should look like:</p>
+            <pre><code>.blue-square { width: 100px; height: 100px; background-color: blue; }</code></pre>
+            <p>Add your CSS below:</p>
+            <textarea id="css-code"></textarea>
+            <p id="css-error" class="error-message"></p>
+        </div>
+
+        <!-- Step 3: Keyframes -->
+        <div class="interactive-step">
+            <h2>Step 3: Keyframes</h2>
+            <p>By adding <b>keyframes</b> we define the <b>behavior</b> of our animation. <code>from</code> defines the start and <code>to</code>the endposition of our animation. Here we set it to move 100px to the right on the x-axis (<code>translateX(100px)</code>).<br><br>Let's go! This is what your code should look like:</p>
+            <pre><code>@keyframes move { from { transform: translateX(0); } to { transform: translateX(100px); } }</code></pre>
+            <p>Add your keyframes below:</p>
+            <textarea id="keyframes-code"></textarea>
+            <p id="keyframes-error" class="error-message"></p>
+        </div>
+
+        <!-- Step 4: Apply the Animation -->
+        <div class="interactive-step">
+            <h2>Step 4: Apply the Animation</h2>
+            <p>Almost done! All we have to do is to give our animation some finishing touches. Normally you would write this to the classes styling (Step 2). For practicing we will just write it here. Notice that the name of the animation (here it is<code>move</code>) has to be the same as the one you used in your keyframes! Apply the animation to your element. This is what your code should look like:</p>
+            <pre><code>.blue-square { animation: move 2s infinite; }</code></pre>
+            <p>Add your animation code below:</p>
+            <textarea id="apply-animation"></textarea>
+            <p id="apply-animation-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <button onclick="runCode()">Run Your Code</button>
+
+    <div class="result-container">
+        <h2>Your Animation:</h2>
+        <div id="output"></div>
+    </div>
+</section>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+<script>
+
+function runCode() {
+    const output = document.getElementById('output');
+    output.innerHTML = ''; // Reset output
+
+    const htmlCode = document.getElementById('html-code').value.trim();
+    const cssCode = document.getElementById('css-code').value.trim();
+    const keyframesCode = document.getElementById('keyframes-code').value.trim();
+    const applyAnimation = document.getElementById('apply-animation').value.trim();
+
+    // Clear previous style
+    let oldStyle = document.getElementById('dynamic-style');
+    if (oldStyle) {
+        oldStyle.remove();
+    }
+
+    // Combine all CSS code including keyframes and apply-animation
+    const styleContent = `${cssCode} ${keyframesCode} ${applyAnimation}`;
+    const style = document.createElement('style');
+    style.id = 'dynamic-style';
+    style.textContent = styleContent;
+
+    // Insert the style into the document head
+    document.head.appendChild(style);
+
+    try {
+        // Insert HTML code into the output div
+        output.innerHTML = htmlCode;
+
+        // Clear previous error messages
+        clearError('html-error');
+        clearError('css-error');
+        clearError('keyframes-error');
+        clearError('apply-animation-error');
+    } catch (e) {
+        displayError('html-error', 'Error in HTML syntax.');
+        return;
+    }
+
+    // Display hints if necessary
+    if (!cssCode.includes('background-color')) {
+        displayError('css-error', 'Consider adding a background-color.');
+    } else {
+        clearError('css-error');
+    }
+
+    if (!keyframesCode.includes('@keyframes')) {
+        displayError('keyframes-error', 'Keyframes seem to be missing.');
+    } else {
+        clearError('keyframes-error');
+    }
+
+    if (!applyAnimation.includes('animation:')) {
+        displayError('apply-animation-error', 'You might want to apply the animation.');
+    } else {
+        clearError('apply-animation-error');
+    }
+}
+
+function displayError(elementId, message) {
+    document.getElementById(elementId).textContent = message;
+}
+
+function clearError(elementId) {
+    document.getElementById(elementId).textContent = '';
+}
+
+</script>
+    
+
+
+
+
+</body>
+</html>
+</body>
+</html>
+
+<!--You can change as many CSS properties you want, as many times as you want.
+        
+To use CSS animation, you must first specify some <code class="keyframes-styling">@ keyframes</code> for the animation.
+
+Keyframes hold what styles the element will have at certain times.</p>>
